@@ -17,19 +17,22 @@ function fromFahrenheit(number) {
   return number - 32;
 }
 
-function getCelcius(fahrenheit) {
+function getCelcius() {
   let fahrenheit = prompt("Masukkan nilai fahrenheit");
   alert((fromFahrenheit(fahrenheit) * 5) / 9);
 }
 
-let umurKucing = (umur) => {
+let umurKucing = () => {
+  let umur = prompt("Berapa umur kucingmu ?");
+
   if (umur == 1) {
-    return 15;
+    alert(15);
   } else if (umur == 2) {
-    return 24;
+    alert(24);
   } else if (umur >= 3) {
-    return 24 + 4 * (umur - 2);
+    alert(24 + 4 * (umur - 2));
   }
 };
 
-let masukkan = (nama) => nama.toLowerCase();
+let masukkan = (nama = prompt("Masukkan nama BESAR")) =>
+  alert(nama.toLowerCase());
