@@ -1,13 +1,16 @@
-function tokoOnline(pembeli, produk) {
-  return "Terima kasih " + pembeli + " telah membeli produk " + produk;
+function tokoOnline() {
+  let pembeli = prompt("Masukkan Namamu ?");
+  let produk = prompt("Apa produk yang kamu beli ?");
+  alert("Terima kasih " + pembeli + " telah membeli produk " + produk);
 }
 
 function fromCelsius(number) {
   return (number * 9) / 5;
 }
 
-function getFahrenheit(celsius) {
-  return fromCelsius(celsius) + 32;
+function getFahrenheit() {
+  let celcius = prompt("Masukkan nilai Celcius");
+  alert(fromCelsius(celcius) + 32);
 }
 
 function fromFahrenheit(number) {
@@ -15,7 +18,8 @@ function fromFahrenheit(number) {
 }
 
 function getCelcius(fahrenheit) {
-  return (fromFahrenheit(fahrenheit) * 5) / 9;
+  let fahrenheit = prompt("Masukkan nilai fahrenheit");
+  alert((fromFahrenheit(fahrenheit) * 5) / 9);
 }
 
 let umurKucing = (umur) => {
